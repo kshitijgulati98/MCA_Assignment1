@@ -59,7 +59,7 @@ def auto_corr(image,num):
                             count+=1
                             ans[pixelval]+=1
         
-        vecx=np.ones(num)
+        vecx=np.zeros(num)
         
         for i in range(num):
             if count!=0:
