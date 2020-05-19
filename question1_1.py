@@ -44,9 +44,7 @@ def auto_corr(image,num):
     
     for i in distance_vector:
         count=0;
-        ans=[]
-        for z in range(num):
-            ans.append(0)
+        ans=np.zeros(num)
             
         for x in range(m):
             for y in range(n):
@@ -61,9 +59,7 @@ def auto_corr(image,num):
                             count+=1
                             ans[pixelval]+=1
         
-        vecx=[]
-        for i in range(num):
-            vecx.append(1)
+        vecx=np.ones(num)
         
         for i in range(num):
             if count!=0:
